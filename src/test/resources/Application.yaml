@@ -1,0 +1,7 @@
+spring:
+  flyway:
+    enabled: false
+
+jwt:
+  secret: sfgsr35663rtjnbksg8gsv233eggtffeeddgkjjhhtdhttebd54ndhdhfhhhshs8877465sbbdd
+  expiration: 3600000 # 1 hour in ms
