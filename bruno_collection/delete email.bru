@@ -1,0 +1,23 @@
+meta {
+  name: delete email
+  type: http
+  seq: 8
+}
+
+delete {
+  url: http://localhost:8080/email?emailId=9&userId=3
+  body: none
+  auth: inherit
+}
+
+params:query {
+  emailId: 9
+  userId: 3
+}
+
+body:json {
+  {
+    "id": null,
+    "phone": "123476383543"
+  }
+}

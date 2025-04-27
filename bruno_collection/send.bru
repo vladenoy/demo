@@ -1,0 +1,17 @@
+meta {
+  name: send
+  type: http
+  seq: 8
+}
+
+patch {
+  url: http://localhost:8080/transfer?senderId=5&recipientId=3&value=20.2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  senderId: 5
+  recipientId: 3
+  value: 20.2
+}

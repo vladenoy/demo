@@ -1,0 +1,23 @@
+meta {
+  name: delete phone
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost:8080/phone?phoneId=7&userId=3
+  body: none
+  auth: inherit
+}
+
+params:query {
+  phoneId: 7
+  userId: 3
+}
+
+body:json {
+  {
+    "id": null,
+    "phone": "123476383543"
+  }
+}

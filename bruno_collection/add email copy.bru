@@ -1,0 +1,23 @@
+meta {
+  name: add email copy
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:8080/email?email=123@mail.com&userId=3
+  body: none
+  auth: inherit
+}
+
+params:query {
+  email: 123@mail.com
+  userId: 3
+}
+
+body:json {
+  {
+    "id": null,
+    "phone": "123476383543"
+  }
+}

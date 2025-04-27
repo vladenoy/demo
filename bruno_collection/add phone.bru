@@ -1,0 +1,23 @@
+meta {
+  name: add phone
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/phone?phone=123476383543&userId=3
+  body: none
+  auth: inherit
+}
+
+params:query {
+  phone: 123476383543
+  userId: 3
+}
+
+body:json {
+  {
+    "id": null,
+    "phone": "123476383543"
+  }
+}

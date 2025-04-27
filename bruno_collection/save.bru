@@ -1,0 +1,40 @@
+meta {
+  name: save
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/user
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoib25lIiwiaWF0IjoxNzQ1NzU4MjM5LCJleHAiOjE3NDU3NjE4Mzl9._YN63VMfBKhq9A_yyTRRpoNa3QyId0iDt9Nus6Xy6Cw
+}
+
+body:json {
+  {
+    "id": null,
+    "name": "one11",
+    "dateOfBirth": "01.01.2020",
+    "password": "testtest",
+    "account": {
+      "id": null,
+      "balance": "2"
+    },
+    "phones": [
+      {
+        "id": null,
+        "phone": "aaa"
+      }
+    ],
+    "emails": [
+      {
+        "id": null,
+        "email": "test3@test.com"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: FindBy
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/users?name=th&pageNumber=0&pageSize=2
+  body: none
+  auth: bearer
+}
+
+params:query {
+  name: th
+  pageNumber: 0
+  pageSize: 2
+  ~dateOfBirth: 01.01.2019
+  ~phone: 12347638343
+  ~email: test34@test.com
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoib25lIiwiaWF0IjoxNzQ1NjkxMTE3LCJleHAiOjE3NDU2OTQ3MTd9.i41V0McWukdAH1XG-mAGLb6ZyPTbBaa7ufsUhvp5FdQ
+}
